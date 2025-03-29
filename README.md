@@ -1,5 +1,8 @@
 # AI-Driven Audio Forensics Tool for Fake Audio Detection
 
+## Model Download:
+https://drive.google.com/file/d/1-KG-hiydHRgytxWuK5-BDlnY3Djg93ip/view?usp=sharing
+
 ## Overview
 This project is an **AI-driven audio forensics tool** designed to detect whether an audio clip is real (human-recorded) or fake (AI-generated, e.g., deepfake). It uses signal processing (MFCC features) and a convolutional neural network (CNN) to classify audio with 93% accuracy. A unique feature of this tool is the **confidence map**, which visualizes which segments of the audio are likely fake, making it interpretable and practical for forensics applications.
 
