@@ -19,7 +19,7 @@ os.makedirs(PLOT_FOLDER, exist_ok=True)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Download the model from Google Drive
-model_url = "https://drive.google.com/file/d/1-KG-hiydHRgytxWuK5-BDlnY3Djg93ip/view?usp=sharing"  # Replace with your Google Drive file ID
+model_url = "https://drive.google.com/uc?id=1-KG-hiydHRgytxWuK5-BDlnY3Djg93ip"  # Replace with your Google Drive file ID
 model_path = "audio_forensics_model.pth"
 if not os.path.exists(model_path):
     print("Downloading model from Google Drive...")
@@ -49,7 +49,7 @@ class AudioCNN(nn.Module):
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = AudioCNN().to(device)
-model.load_state_dict(torch.load(model_path, map_location=device))
+model.load_state_dict(torch.load(model_path, map_location=device, weights_only=False))
 model.eval()
 
 # Parameters
