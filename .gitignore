@@ -1,0 +1,23 @@
+# Python virtual environment
+venv/
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Large files
+audio_forensics_model.pth
+fake_or_real_dataset/
+
+# Temporary files
+uploads/*
+static/plots/*
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

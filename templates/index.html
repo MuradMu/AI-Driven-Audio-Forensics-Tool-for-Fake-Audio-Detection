@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Forensics Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Forensics Tool</h1>
+        <p>Upload an audio file to detect if it's real or fake.</p>
+        <form method="post" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".wav">
+            <input type="submit" value="Analyze">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Forensics Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Forensics Result</h1>
+        <p>Prediction: {{ prediction }}</p>
+        <p>Confidence: {{ confidence }}</p>
+        <h2>Confidence Map</h2>
+        <img src="{{ url_for('static', filename=plot_url) }}" alt="Confidence Map">
+        <br>
+        <a href="/">Upload another file</a>
+    </div>
+</body>
+</html>
