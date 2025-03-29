@@ -1,7 +1,10 @@
 flask
-torch
-torchvision
+torch==1.13.1+cpu
+torchvision==0.14.1+cpu
 librosa
 numpy
 matplotlib
 soundfile
+gunicorn
+gdown
+urllib3
