@@ -4,6 +4,8 @@ import torch
 import torch.nn as nn
 import librosa
 import librosa.display
+import matplotlib
+matplotlib.use('Agg')  # Use 'Agg' backend for matplotlib to avoid GUI issues
 import matplotlib.pyplot as plt
 from flask import Flask, request, render_template, redirect, url_for
 import soundfile as sf
